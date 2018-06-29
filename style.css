@@ -1,0 +1,470 @@
+@import url("https://use.typekit.net/efv2ikn.css");
+body{
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    overflow: hidden;
+    color:rgb(242, 240, 221);
+}
+a{
+    color: inherit;
+    font-weight: 100;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.box-links{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: "ht-neon",sans-serif;
+    font-size: 78px;
+}
+
+.bottom-right h1{
+    font-size: 46px; 
+ }
+
+p{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+}
+span{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;   
+}
+.join-mailing-list{
+    text-align: center;
+}
+.side-bar{
+    width: 260px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(2, 33, 105);
+    z-index: 1;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.side-bar .logo-container{
+    padding: 50px 50px;
+}
+
+.side-bar nav{
+    padding: 0 40px;
+}
+
+.side-bar nav a{
+    color:rgb(242, 240, 221);
+    text-transform: uppercase;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    letter-spacing: 2px;
+}
+.side-bar nav a:hover{
+    color:white;   
+}
+
+.side-bar nav span{
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+}
+
+.side-bar .social{
+    padding: 35px 0px;
+    text-align: center;
+}
+
+.side-bar .social a{    
+    display: inline-block;
+    margin: 0 1px;
+    margin-bottom: 3px;
+    position: relative;
+    padding: 0px 12px;
+    font-size: 20px;
+    color: rgb(242, 240, 221);
+
+}
+
+.main-content{
+    position: absolute;
+    left: 260px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color:rgb(242, 240, 221);
+    -webkit-transition: all 200ms ease-out; /* Safari */
+    transition: all 200ms ease-out;
+}
+
+.main-content .beer-container{
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+@keyframes slide-in {
+    0% { transform: translateX(300%); }
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    0% { -webkit-transform: translateX(300%); }
+    100% { transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-350%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-350%); }
+}
+.slide-from-side-bar{
+    animation: slide-in 0.7s backwards;
+    -webkit-animation: slide-in 0.7s backwards;
+}
+
+@keyframes slide-from-side-bar {
+    0% { transform: translateX(300%); }
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-from-side-bar {
+    0% { -webkit-transform: translateX(300%); }
+    100% { transform: translateX(0%); }
+}
+
+.slide-in-box{
+    animation: slide-in 0.7s backwards;
+    -webkit-animation: slide-in 0.7s backwards;
+}
+.hidden{
+    display: none;
+}
+.beers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 44%;
+    background: linear-gradient(0deg,rgba(234, 233, 218, 0.8),rgba(234, 233, 218, 0.8)),url(assets/map.png);
+    background-size:cover;
+    color: rgb(2, 33, 105);
+}
+
+
+
+.beers p{
+    color: #666666
+}
+
+.brewery{
+    position: absolute;
+    top: 0;
+    left: 44%;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(0deg,rgba(51, 51, 51, 0.7),rgba(51, 51, 51, 0.7)),url(assets/thebrewery.png);
+    background-size:cover;
+}
+
+.brewery h1{
+    text-shadow: 2px 1px #ff0000;
+    margin-bottom: 10%;
+}
+
+.tap-room{
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    right: 28%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(51, 51, 51, 0.7),rgba(51, 51, 51, 0.7)),url(assets/taproom.png);
+    background-size:cover;
+
+}
+.tap-room h1{
+    text-shadow: 2px 1px  green;
+    margin-bottom: 10%;
+}
+
+.the-grub{
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    height: 25%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(51, 51, 51, 0.7),rgba(51, 51, 51, 0.7)),url(assets/food.png);
+    background-size:cover;
+}
+
+.the-grub h1{
+    text-shadow: 2px 1px rgb(247, 227, 111);
+}
+
+.the-party{
+    position: absolute;
+    top: 75%;
+    left: 72%;
+    height: 25%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(51, 51, 51, 0.7),rgba(51, 51, 51, 0.7)),url(assets/events.png);
+    background-size:cover;
+}
+
+.the-party h1{
+    text-shadow: 2px 1px purple;
+}
+
+
+.main-content .title-button-container{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+.main-content .title-button-container #beers{
+    font-size: 78px;
+}
+
+.menu-item{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    display: none;
+    padding: 6px;
+    font-size: 32px;
+    color: white;
+}
+ .title-button-container .bordered-button{
+    border: solid;
+    position: relative;
+    border-color: rgb(242, 240, 221);
+    border-width: 1px;
+    padding: 7px 7px;
+    max-width: 150px;
+    margin: auto;
+} 
+
+.bordered-button::before, .bordered-button::after{
+    content:"";
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: red;
+  }
+
+  span::before, span::after{
+    content:"";
+    width:4px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: red;
+  }
+
+  .tap-room .bordered-button::before, .tap-room .bordered-button::after{
+      background: green;
+  }
+
+  .tap-room span::before,  .tap-room span::after{
+        background: green;
+  }
+
+.the-grub .bordered-button::before, .the-grub  .bordered-button::after{
+    background: yellow;
+}
+
+.the-grub span::before, .the-grub span::after{
+    background: yellow;
+}
+
+.the-party .bordered-button::before, .the-party  .bordered-button::after{
+    background: purple;
+}
+
+.the-party span::before, .the-party span::after{
+    background: purple;
+}
+
+
+  .bordered-button:hover::before, .bordered-button:hover::after{
+     width: 100%; 
+  }
+  .bordered-button:hover span::before, .bordered-button:hover span::after{
+     height: 100%; 
+  }
+  
+  
+  /*----- button 3 -----*/
+  .bordered-button::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .bordered-button span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .bordered-button::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .bordered-button span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  
+  .bordered-button:hover::after{
+    transition-delay: 0s;
+  }
+  .bordered-button:hover span::after{
+    transition-delay: 0.2s;
+  }
+  .bordered-button:hover::before{
+    transition-delay: 0.4s;
+  }
+  .bordered-button:hover span::before{
+    transition-delay: 0.6s;
+  }
+
+.bottom-right .title-button-container{
+   padding-top: 5%;
+}
+
+.tap-room .title-button-container{
+    padding-top: 25%;
+}
+
+.copy-rite{
+
+    font-size: 8px;
+    position: absolute;
+    bottom: 0px;
+    left: 55px;
+    text-align: center;
+}
+/*jQuery Stuff*/
+
+
+
+/* Mobile Stuff */
+
+@media only screen and (max-width: 700px) {
+    body{
+        overflow: scroll;
+    }
+   .menu-item{
+       display: block;
+   }
+   .side-bar{
+       width: 200px;
+   }
+
+
+    .tap-room .title-button-container{
+        padding-top: 10%;
+    }
+   
+    .main-content {
+        left: 0;
+        right: auto;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .beers{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
+
+    .brewery{
+        position: relative;
+        height: 300px;
+        display: block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+    }
+
+    .tap-room{    
+        position: relative;
+        height: 300px;
+        display: block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+    }
+
+    .the-grub{
+        position: relative;
+        height: 300px;
+        display: block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+    }
+
+    .the-party{
+        position: relative;
+        height: 300px;
+        display: block;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+    }
+    .bottom-right{
+        padding-top: 10%;
+    }
+
+    .bottom-right h1{
+        margin-bottom: 10%;
+    }
+}
+
+
+
+
+
+.fa-instagram:hover{
+    color: rgb(128,0,0);
+}
+
+.fa-untappd:hover{
+    color: rgb(128,0,0);
+}
